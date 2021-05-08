@@ -1,4 +1,6 @@
- 1. Create a Store class with 2 attributes that has 2 attributes: a name and a list of products. The name must be provided upon creation, but the products list should be empty.
+from product import Product
+
+# 1. Create a Store class with 2 attributes that has 2 attributes: a name and a list of products. The name must be provided upon creation, but the products list should be empty.
 class Store:
     def __init__(self, name):
         self.name = name
