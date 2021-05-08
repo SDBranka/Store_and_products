@@ -1,5 +1,5 @@
 # 10. NINJA BONUS: Modularize your code into 3 separate files
-from store2 import Store
+from store3 import Store
 
 # 7. Test out your classes by creating an instance of the Store and a few instances of the Product class, add those instances to the store instance, and then test out the methods.
 krogers = Store("Krogers")

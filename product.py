@@ -7,7 +7,7 @@ class Product:
         self.name = name
         self.price = price
         self.category = category
-        self.id = uuid.uuid4().hex[:8]
+        self.id = uuid.uuid4().hex[:5]
 
     # 3. Add the print_info method to the Product class
     def print_info(self):

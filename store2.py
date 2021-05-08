@@ -13,16 +13,16 @@ class Store:
     
     def sell_product(self):
         enter_value = True
-        # while enter_value:
-        id = input ("Enter id of product to be sold: ")
-        for i in range(len(self.products)):
-            if self.products[i].id == id:
-                x = i
-                    # enter_value = False
-                    # break
-                # else: 
-                #     print("The item you entered does not exist")
-                #     break
+        count = 0
+        while enter_value:
+            id = input ("Enter id of product to be sold: ")
+            for i in range(len(self.products)):
+                if self.products[i].id == id:
+                    x = i
+                    enter_value = False
+                    count += 1
+            if count == 0:
+                print("The item you entered does not exist")
         self.products.pop(x)
         return self
 
