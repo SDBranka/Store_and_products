@@ -12,6 +12,9 @@ class Store:
         return len(self.products)-1
     
     def sell_product(self):
+        if len(self.products) == 0:
+            print("There are no items in the store")
+            return self        
         enter_value = True
         count = 0
         while enter_value:
